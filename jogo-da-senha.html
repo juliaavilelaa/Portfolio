@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Senha</title>
+    <link rel="stylesheet" href="src/css/jogo-da-senha.css" />
+    <link rel="icon" href="src/midia/favicon2.ico" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Jogo da Senha</h1>
+      <p>
+        O <strong>Jogo da Senha</strong> (ou <em>Bulls and Cows</em>) é um
+        desafio de lógica: você precisa descobrir uma senha de 4 dígitos únicos.
+      </p>
+      <p>
+        A cada tentativa, o jogo te diz quantos números estão na
+        <strong>posição certa (bulls)</strong> e quantos estão na
+        <strong>posição errada (cows)</strong>. Use essas dicas para acertar a
+        senha!
+      </p>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="guess-input"
+          maxlength="4"
+          placeholder="Ex: 1234"
+        />
+        <button onclick="makeGuess()">Enviar</button>
+        <button onclick="revealCode()">Mostrar Senha</button>
+      </div>
+
+      <ul id="attempts-list"></ul>
+    </div>
+    <script src="src/js/jogo-da-senha.js"></script>
+  </body>
+</html>
